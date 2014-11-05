@@ -1,0 +1,164 @@
+/*  NOTE: This CSS file is somewhat messy right 
+now because different rules were added somewhat
+hapzardly. It could probably benefit from some
+cleaning up, but it works for now. */
+
+
+body {
+  font-family: sans-serif;
+}
+
+.line {
+  stroke-width: 1;
+  fill: none;
+  shape-rendering: crispEdges;
+}
+
+#scatLine {
+  visibility: none;
+}
+
+#scatLine.visible {
+  stroke: black;
+}
+
+#showLineLabel {
+  display: none;
+}
+
+
+label {
+  position: absolute;
+  font-size: 10px;
+}
+
+.enclosure, clippath rect {
+	fill: none;
+	stroke: black;
+	stroke-width: 2;
+	pointer-events: all;
+}
+
+p {
+ font-size: 12pt;
+}
+
+div#legend {
+  margin-left: 100px;
+  width: 500px;
+}
+
+text.axes.title {
+	dominant-baseline: middle;
+	text-anchor: middle;
+	fill: black;
+  font-size: 25px;
+}
+
+text.axes.ticks {
+	dominant-baseline: middle;
+}
+
+text.main.title {
+	dominant-baseline: middle;
+	text-anchor: middle;
+}
+
+text.corrlabel {
+	dominant-baseline: middle;
+}
+
+svg .cell {
+	pointer-events: all;
+}
+
+svg .cell:hover {
+	stroke-width: 1;
+	stroke: black;
+	/*fill: black;*/
+}
+
+svg .cell.clicked {
+	stroke: black;
+	fill: black;
+}
+
+
+
+svg .axis line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.tooltip {
+	display: none;
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.tooltip p {
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 13px;
+        line-height: 8px;
+}
+
+#resetScat, #shuffleCorr, #shuffleDefault {
+	visibility: hidden;
+	position: absolute;
+}
+
+.main.title {
+	font-size: 30px;
+}
+
+.extent {
+  fill: #000;
+  fill-opacity: .125;
+  stroke: #fff;
+}
+
+svg .points {
+  pointer-events: all;
+  opacity: 0.5;
+}
+
+svg .points:hover {
+  stroke: orange;
+  stroke-width: 3;
+  pointer-events: all;
+  opacity: 1;
+}
+
+svg .points.clicked {
+  fill: red;
+    pointer-events: all;
+}
+
+.points.outsideBrush {
+  fill: grey !important;
+    pointer-events: all;
+}
+
+.points.insideBrush {
+  fill: orange !important;
+    pointer-events: all;
+    opacity: 1;
+}
+
+#instrucs {
+  position: absolute;
+  text-align: center;
+}
